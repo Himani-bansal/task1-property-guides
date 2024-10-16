@@ -21,7 +21,7 @@ app.use(express.static(path.join(__dirname, "public")));
 // MIDDLEWARES
 // app.use(multerParse.none());
 const corsOptions = {
-  origin: "http://localhost:3000",
+  origin: ["http://localhost:3000", "https://task1-property-guides-dyrk-o0skxj47c.vercel.app/"],
   credentials: true,
 };
 app.use(cors(corsOptions));
