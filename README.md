@@ -25,7 +25,7 @@ Database: MongoDB
 
 🤝 Contributions: Contributions are welcome! If you have ideas for improvements or features, feel free to submit a pull request.
 
-🌐 Explore Property Guide: Visit our website at [https://propertyguide.netlify.app/](https://task1-property-guides-dyrk-o0skxj47c.vercel.app/)
+🌐 Explore Property Guide: Visit our website at [https://task1-property-guides-dyrk.vercel.app/]
 
 Happy property hunting!
 
