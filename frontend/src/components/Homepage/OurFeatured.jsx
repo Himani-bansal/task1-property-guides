@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { allPgs } from "../../api";
 import house1 from "./images/house1.webp";
 import house2 from "./images/house2.jpg";
-import house3 from "./images/house3.jpeg";
+import house3 from "./images/house3.jpg";
 import arrow from "./images/arrow.png";
 import "./header.css";
 import swal from "sweetalert";
@@ -16,11 +16,11 @@ export const OurFeatured = () => {
     // let errorMessage = document.querySelector(".error-msg");
 
     loadingOverlay.style.display = "block";
-    const response = await allPgs({ homeType: filter });
+    const response = await allPgs({ pgType: filter });
     loadingOverlay.style.display = "none";
     if (response.status === "success") {
       navigate("/listedpg", {
-        state: [response.data.pgs, { homeType: [filter] }],
+        state: [response.data.pgs, { pgType: [filter] }],
       });
       window.scrollTo(0, 0);
     } else {
@@ -29,14 +29,17 @@ export const OurFeatured = () => {
   };
   return (
     <>
-      <section>
+      <section className="bg_all">
         <div className="container py-4 py-sm-5">
           <h2 className="ff_space text-center blue_clr fw-bold fs_xl">
-            Featured Properties
+            Discover Prime Properties
           </h2>
           <div className="d-flex justify-content-center">
             <p className="ff_space text-center text_rgba_blac fw-normal fs_sm col-lg-10 mb-0">
-              Discover our top featured properties, offering prime locations, modern amenities, and great value. Whether you're seeking a dream home or a smart investment, explore our curated selection of homes and apartments designed for comfort and style.
+              Browse through a wide range of properties including rentals,
+              luxury homes, and commercial real estate. Whether you're looking
+              for your next home or investment, we have options that fit every
+              budget and need.
             </p>
           </div>
 
@@ -48,19 +51,19 @@ export const OurFeatured = () => {
                   className="w-100 border-hero accomodation-card"
                   src={house1}
                   alt="Rhouse1"
-                  onClick={() => makeRequest("Town_House")}
+                  onClick={() => makeRequest("male")}
                 />
                 <div className="d-flex justify-content-between mt-2 align-items-center">
-                  <h5 className="m-0 ff_space fw_500 fs_md">Town House</h5>
+                  <h5 className="m-0 ff_space fw_500 fs_md">Rental Properties</h5>
                 </div>
                 <div className="d-flex justify-content-between align-items-center mb-3">
                   <h5
                     className="m-0 ff_space fw_400 fs_xsm opacity-75 accomodation-arrow"
-                    onClick={() => makeRequest("Town_House")}
+                    onClick={() => makeRequest("male")}
                   >
                     Explore <img src={arrow} alt="" className="w_20" />
                   </h5>
-
+                 
                 </div>
               </div>
             </div>
@@ -70,19 +73,19 @@ export const OurFeatured = () => {
                   className="w-100 border-hero accomodation-card"
                   src={house2}
                   alt="Rhouse1"
-                  onClick={() => makeRequest("Apartments")}
+                  onClick={() => makeRequest("female")}
                 />
                 <div className="d-flex justify-content-between mt-2 align-items-center">
-                  <h5 className="m-0 ff_space fw_500 fs_md">Modern Villa</h5>
+                  <h5 className="m-0 ff_space fw_500 fs_md">Homes for Sale</h5>
                 </div>
                 <div className="d-flex justify-content-between align-items-center mb-3">
                   <h5
                     className="m-0 ff_space fw_400 fs_xsm opacity-75 accomodation-arrow"
-                    onClick={() => makeRequest("Apartments")}
+                    onClick={() => makeRequest("female")}
                   >
                     Explore <img src={arrow} alt="" className="w_20" />
                   </h5>
-
+                  
                 </div>
               </div>
             </div>
@@ -92,19 +95,19 @@ export const OurFeatured = () => {
                   className="w-100 border-hero accomodation-card"
                   src={house3}
                   alt="Rhouse1"
-                  onClick={() => makeRequest("Apartments")}
+                  onClick={() => makeRequest("coLiving")}
                 />
                 <div className="d-flex justify-content-between mt-2 align-items-center">
-                  <h5 className="m-0 ff_space fw_500 fs_md">Apartments</h5>
+                  <h5 className="m-0 ff_space fw_500 fs_md">Luxury Estates</h5>
                 </div>
                 <div className="d-flex justify-content-between align-items-center mb-3">
                   <h5
                     className="m-0 ff_space fw_400 fs_xsm opacity-75 accomodation-arrow"
-                    onClick={() => makeRequest("Apartments")}
+                    onClick={() => makeRequest("coLiving")}
                   >
                     Explore <img src={arrow} alt="" className="w_20" />
                   </h5>
-
+                  
                 </div>
               </div>
             </div>
