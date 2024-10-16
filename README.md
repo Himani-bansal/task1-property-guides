@@ -1,34 +1,32 @@
-PGSeeker - Find Your Perfect PG Accommodation
-
-Welcome to PGSeeker, the ultimate platform to discover comfortable and affordable PG accommodations. Whether you're a student, working professional, or someone looking for a new home, PGSeeker helps you find the ideal PG space that suits your needs.
+Property Guide - Find Your Perfect Property
+Welcome to Property Guide, the ultimate platform to discover comfortable and affordable properties for rent or sale. Whether you're a student, working professional, or someone looking for a new home, Property Guide helps you find the ideal property that suits your needs.
 
 🏡 Features:
-- Browse through a wide range of PG accommodations
-- Filter options to narrow down your search based on preferences
-- Detailed information about each PG, including amenities and pricing
-- User-friendly interface for easy navigation
-- Leave reviews and ratings for PGs you've experienced
-- Connect with PG owners for inquiries
 
+Browse through a wide range of residential and commercial properties
+Filter options to narrow down your search based on preferences such as location, price, and property type
+Detailed information about each property, including amenities, pricing, and high-quality images
+User-friendly interface for easy navigation and seamless property discovery
+Leave reviews and ratings for properties you’ve experienced
+Connect with property owners or agents for inquiries and viewings
 🚀 How to Use:
-1. Visit the PGSeeker website.
-2. Explore the list of PG accommodations available.
-3. Use filters to refine your search based on location, amenities, and more.
-4. View detailed information about each PG.
-5. Leave reviews and ratings to help others make informed decisions.
 
+Visit the Property Guide website.
+Explore the list of properties available for rent or sale.
+Use filters to refine your search based on location, type of property, amenities, and budget.
+View detailed information about each property, including descriptions and photos.
+Leave reviews and ratings to help others make informed decisions.
 ⚙️ Technologies Used:
-- Frontend: HTML, CSS, React
-- Backend: Node.js, Express
-- Database: MongoDB
 
-📌 Note:
-This repository contains the frontend and backend code for PGSeeker. The codebase is designed to help you set up a similar platform for PG accommodation listings. Feel free to explore, contribute, and use this code for educational and non-commercial purposes.
+Frontend: HTML, CSS, React
+Backend: Node.js, Express
+Database: MongoDB
+📌 Note: This repository contains the frontend and backend code for Property Guide. The codebase is designed to help you set up a similar platform for property listings. Feel free to explore, contribute, and use this code for educational and non-commercial purposes.
 
-🤝 Contributions:
-Contributions are welcome! If you have ideas for improvements or features, feel free to submit a pull request.
+🤝 Contributions: Contributions are welcome! If you have ideas for improvements or features, feel free to submit a pull request.
 
-🌐 Explore PGSeeker:
-Visit our website at https://pgseeker.netlify.app/
+🌐 Explore Property Guide: Visit our website at [https://propertyguide.netlify.app/](https://task1-property-guides-dyrk-o0skxj47c.vercel.app/)
 
-Happy PG hunting!
+Happy property hunting!
+
+
